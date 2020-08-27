@@ -5,8 +5,11 @@ import random
 import sys
 import string
 import os
-
-try: import colorama
+import pyfiglet
+import colorama
+#Text in 3D font
+out = pyfiglet.figlet_format("S.W.M", font="slant")
+try: from colorama import Fore, Back, Style
 except: print('Не установлена "colorama" через pip ...'); exit()
 colorama.init()
 session = requests.session()
@@ -40,7 +43,9 @@ print('[post-11x] -- > Найдено %s прокси в списке'%str(lengt
 
 global emailToUse
 global authType
-
+print(Fore.GREEN+out+Style.DIM)
+print("----------------t.me/post11x----------------")
+print("----------------t.me/post11x_eng------------")
 authTypeTest = input('Что используем?\nИспользуй \'e\' для почты и \'p\' для номера\nВыбирай: ')
 if authTypeTest.lower() == 'e':
     nameEmailOrPhoneNumber = 'Почта'
