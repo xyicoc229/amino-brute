@@ -8,7 +8,7 @@ import os
 import pyfiglet
 import colorama
 #Text in 3D font
-out = pyfiglet.figlet_format("S.W.M", font="slant")
+out = pyfiglet.figlet_format("X.Y.I", font="slant")
 try: from colorama import Fore, Back, Style
 except: print('Не установлена "colorama" через pip ...'); exit()
 colorama.init()
